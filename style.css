@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-
+    box-sizing: border-box;
 }
 
 html{
@@ -14,6 +14,8 @@ html{
 
 body {
     place-items: center;
+    min-width: 100vw;
+    max-height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -30,11 +32,11 @@ section{
 
 .sec-01{
     background: url(imgs/background.gif);
-    max-width: 1300px;
+    background-size: cover;
+    max-width: 2150px;
     padding: 0 80px;
     height: 100vh;
     color: #fff;
-    min-height: 500px;
 }
 
 .container {
@@ -43,6 +45,9 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
 .main-title {
@@ -224,6 +229,7 @@ section{
 
 .sec-03{
     background: url(imgs/background.gif);
+    background-size: cover;
     padding-bottom: 100px;
     padding-top: 100px;
 }
@@ -292,26 +298,40 @@ footer span a:hover{
 
 /* __________________RESPONSIVO__________________ */
 
-@media (max-width: 1300px){
-    .sec-01, .sec-02, .sec-03{
-        width: 100%;
+@media screen and (max-width: 1300px){
+    .container{
+        margin-left: 0;
     }
 }
 
-@media (max-width: 1000px){
-    .sec-01, .sec-02, .sec-03{
-        width: 100%;
+@media screen and (max-width: 1104px){
+    .sec-02 .content .image img{
+        width: 350px;
+        height: 350px;
     }
 }
 
-@media (max-width: 800px){
-    .sec-01, .sec-02, .sec-03{
-        width: 100%;
+@media (max-width: 947px){
+    .container{
+        max-width: 800px;
+        padding: 0 50px;
+    }
+
+    
+}
+@media (max-width: 768px){
+    .sec-01 .content .text-box {
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 }
-
-@media (max-width: 650px){
-    .sec-01, .sec-02, .sec-03{
-        width: 100%;
+@media (max-width: 360px){
+    /* .home .home-content .text-2{
+        font-size: 50px;
     }
+    .home .home-content .text-3{
+        font-size: 27px;
+    } */
+    
 }
