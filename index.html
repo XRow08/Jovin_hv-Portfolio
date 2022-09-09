@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Jovin_HV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <div class="scroll-up-btn">
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </div>
+        <section class="sec-01">
+            <div class="container">
+                <h2 class="main-title">Jovin_HV</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="imgs/leesin.jpg" alt="perfil">
+                    </div>
+                    <div class="text-box">
+                        <h3>Venha me conhecer</h3>
+                        <p>Lives de jogos variados a semana toda... Saiba mais!</p>
+                    </div>
+                </div>
+                <div class="media-icons">
+                    <div class="button">
+                        <a href="https://www.tiktok.com/@jovinhv?is_from_webapp=1&sender_device=pc">
+                        <div class="icon"><i class="fab fa-tiktok"></i></div>
+                        <span>Tiktok</span></a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.instagram.com/jovinhv/">
+                        <div class="icon"><i class="fab fa-instagram"></i></div>
+                        <span>Instagram</span></a>
+                    </div>
+                    <div class="button">
+                        <a href="https://www.twitch.tv/jovin_hv">
+                        <div class="icon"><i class="fab fa-twitch"></i></div>
+                        <span>Twitch</span></a>
+                    </div>
+                    <div class="button">
+                        <a href="">
+                        <div class="icon"><i class="fab fa-discord"></i></div>
+                        <span>Discord</span></a>
+                    </div>
+                    <div class="button">
+                        <a href="">
+                        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                        <span>WhatsApp</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-02" id="sec-02">
+            <div class="container">
+                <h3 class="section-title">Um pouco sobre mim!</h3>
+                <div class="content">
+                    <div class="image">
+                        <img src="imgs/perfil.jpeg" alt="about">
+                    </div>
+                    <div class="info">
+                        <h4 class="info-title">Meu nome é <span>Henrique Virginelli</span></h4>
+                        <p>Faço live de jogos variados.
+                            Sou gente boa po, confia.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="sec-03">
+            <div class="container">
+                <h3 class="section-title">Redes Sociais</h3>
+                <div class="content">
+                    <div class="media-info">
+                    <li><a href="https://discord.gg/zqhHTVV8" class="icon"><i class="fab fa-discord"></i> Discord</a></li>
+                    <li><a href="https://www.tiktok.com/@jovinhv?is_from_webapp=1&sender_device=pc" class="icon"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                    <li><a href="https://www.twitch.tv/jovin_hv" class="icon"><i class="fab fa-twitch"></i> Twitch</a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/jovinhv/" class="icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </div>
+                    <div class="image3">
+                        <img src="imgs/redes.jpg" alt="about">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span>Criado por <a href="https://www.linkedin.com/in/murillo-augusto-4242aa139/" target="_blank">XR Sistemas</a> | Todos os direitos reservados 2021</span>
+        </footer>
+        <script>
+            ScrollReveal({
+                reset:true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+            })
+
+            ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+            ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+            ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+            ScrollReveal().reveal('.media-icons i, .button, .icon, .media-icons span', { delay: 500, origin: 'bottom', interval: 200 });
+            ScrollReveal().reveal('.sec-02 .image, .sec-03 .image, .image3', { delay: 500, origin: 'top'});
+            ScrollReveal().reveal('.media-info li', { delay: 700, origin: 'right' });            
+        </script>
+    </body>
+</html>
